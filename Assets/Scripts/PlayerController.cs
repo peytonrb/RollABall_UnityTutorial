@@ -56,11 +56,7 @@ public class PlayerController : MonoBehaviour
 
     void SetCountText()
     {
-        if (count == 8) {
-            
-        } else if {
-            countText.text = "Count: " + count.ToString();
-        }
+        countText.text = "Count: " + count.ToString();
 
         if (count >= 10)
         {
