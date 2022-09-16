@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     public float speed;
     public TextMeshProUGUI countText;
-    public GameObject winTextObject;
     public TextMeshProUGUI livesText;
+    public GameObject winTextObject;
     private float movementX;
     private float movementY;
     private Rigidbody rb;
