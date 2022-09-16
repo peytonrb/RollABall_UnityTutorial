@@ -74,5 +74,9 @@ public class PlayerController : MonoBehaviour
     void SetLivesText()
     {
         livesText.text = "Lives: " + lives.ToString();
+
+        if (lives == 0) {
+            winTextObject
+        }
     }
 }
