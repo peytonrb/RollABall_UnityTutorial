@@ -76,7 +76,8 @@ public class PlayerController : MonoBehaviour
         livesText.text = "Lives: " + lives.ToString();
 
         if (lives == 0) {
-            winTextObject.GetComponent(TextMeshProUGUI).text = "You Lose! Game created by Peyton Bischof";
+            TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
+            textObject.text = "You Lose! Game created by Peyton Bischof";
             winTextObject.SetActive(true);
         }
     }
