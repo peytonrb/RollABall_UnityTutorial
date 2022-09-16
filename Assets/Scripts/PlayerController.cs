@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI countText;
     public TextMeshProUGUI livesText;
     public GameObject winTextObject;
+    public GameObject loseTextObject;
     private float movementX;
     private float movementY;
     private Rigidbody rb;
@@ -24,6 +25,7 @@ public class PlayerController : MonoBehaviour
         SetCountText();
         SetLivesText();
         winTextObject.SetActive(false);
+        loseTextObject.SetActive(false);
     }
 
     void FixedUpdate()
