@@ -79,9 +79,7 @@ public class PlayerController : MonoBehaviour
         livesText.text = "Lives: " + lives.ToString(); // this is where object reference is messed up
 
             if (lives == 0) {
-            // TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
-            //     textObject.text = "You Lose! Game created by Peyton Bischof";
-            //     winTextObject.SetActive(true);
+            loseTextObject.SetActive(true);
             }
     }
 }
