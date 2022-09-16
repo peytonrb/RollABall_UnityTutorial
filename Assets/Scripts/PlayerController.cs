@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     private Rigidbody rb;
     private int count;
+    private bool playerAdvanced = true;
 
     void Start()
     {
@@ -41,8 +42,8 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
 
-        bool playerAdvanced = true;
-        if (count == 8 && playerAdvanced) {
+        if (count == 8 && playerAdvanced)
+        {
             transform.position = new Vector3(40.0f, 0.5f, 0.0f);
             SetCountText();
             playerAdvanced = false;
