@@ -42,8 +42,8 @@ public class PlayerController : MonoBehaviour
         else if (other.gameObject.CompareTag("Enemy"))
         {
             other.gameObject.SetActive(false);
-            // lives = lives - 1;
-            // SetLivesText();
+            lives = lives - 1;
+            SetLivesText();
         }
 
         if (count == 8 && playerAdvanced)
@@ -71,14 +71,14 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    // void SetLivesText()
-    // {
-    //     livesText.text = "Lives: " + lives.ToString();
+    void SetLivesText()
+    {
+        livesText.text = "Lives: " + lives.ToString();
 
-    //     // if (lives == 0) {
-    //     //     TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
-    //     //     textObject.text = "You Lose! Game created by Peyton Bischof";
-    //     //     winTextObject.SetActive(true);
-    //     // }
-    // }
+        // if (lives == 0) {
+        //     TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
+        //     textObject.text = "You Lose! Game created by Peyton Bischof";
+        //     winTextObject.SetActive(true);
+        // }
+    }
 }
