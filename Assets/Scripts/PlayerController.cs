@@ -41,10 +41,11 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
 
-        bool 
-        if (count == 8) {
+        bool playerAdvanced = true;
+        if (count == 8 && playerAdvanced) {
             transform.position = new Vector3(40.0f, 0.5f, 0.0f);
             SetCountText();
+            playerAdvanced = false;
         }
     }
 
