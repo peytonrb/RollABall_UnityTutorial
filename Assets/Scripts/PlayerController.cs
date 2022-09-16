@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
 
     void SetLivesText()
     {
-        livesText.text = "Lives: " + "3"; // this is where object reference is messed up --> lives.to string is null
+        livesText.text = "Lives: " + lives.ToString(); // this is where object reference is messed up
 
             // if (lives == 0) {
             // // TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
