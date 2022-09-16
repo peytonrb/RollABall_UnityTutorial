@@ -41,6 +41,7 @@ public class PlayerController : MonoBehaviour
             SetCountText();
         }
 
+        bool 
         if (count == 8) {
             transform.position = new Vector3(40.0f, 0.5f, 0.0f);
             SetCountText();
