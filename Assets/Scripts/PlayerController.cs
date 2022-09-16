@@ -71,6 +71,7 @@ public class PlayerController : MonoBehaviour
         if (count >= 18)
         {
             winTextObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
@@ -80,6 +81,7 @@ public class PlayerController : MonoBehaviour
 
             if (lives == 0) {
                 loseTextObject.SetActive(true);
+                Destroy(gameObject);
             }
     }
 }
