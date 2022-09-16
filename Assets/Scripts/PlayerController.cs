@@ -54,7 +54,8 @@ public class PlayerController : MonoBehaviour
         countText.text = "Count: " + count.ToString();
         if (count >= 8)
         {
-            winTextObject.SetActive(true);
+            transform.position = new Vector3(40.0f, 0.5f, 0.0f);
+            // winTextObject.SetActive(true);
         }
     }
 }
