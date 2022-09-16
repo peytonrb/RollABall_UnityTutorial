@@ -76,10 +76,10 @@ public class PlayerController : MonoBehaviour
 
     void SetLivesText()
     {
-        livesText.text = "Lives: " + lives.ToString(); // this is where object reference is messed up
+        livesText.text = "Lives: " + lives.ToString();
 
             if (lives == 0) {
-            loseTextObject.SetActive(true);
+                loseTextObject.SetActive(true);
             }
     }
 }
