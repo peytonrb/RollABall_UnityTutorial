@@ -12,16 +12,17 @@ public class PlayerController : MonoBehaviour
     private float movementY;
     private Rigidbody rb;
     private int count;
-    private bool playerAdvanced = true;
     private int lives;
+
+    private bool playerAdvanced = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         count = 0;
-        // lives = 3;
+        lives = 3;
         SetCountText();
-        // SetLivesText();
+        SetLivesText();
         winTextObject.SetActive(false);
     }
 
@@ -75,8 +76,8 @@ public class PlayerController : MonoBehaviour
     {
         livesText.text = "Lives: " + lives.ToString();
 
-        // if (lives == 0) {
-        //     TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
+        if (lives == 0) {
+            TextMesh textObject = GameObject.Find("winTextObject").GetComponent<TextMesh>();
         //     textObject.text = "You Lose! Game created by Peyton Bischof";
         //     winTextObject.SetActive(true);
         // }
