@@ -40,6 +40,12 @@ public class PlayerController : MonoBehaviour
             count = count - 1;
             SetCountText();
         }
+
+        if (count == 8) {
+            transform.position = new Vector3(40.0f, 0.5f, 0.0f);
+            count = 0;
+            SetCountText();
+        }
     }
 
     void OnMove(InputValue value)
@@ -52,12 +58,9 @@ public class PlayerController : MonoBehaviour
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 8)
+        if (count >= 10)
         {
-            transform.position = new Vector3(40.0f, 0.5f, 0.0f);
-            count = 0;
-            SetCountText();
-            // winTextObject.SetActive(true);
+            winTextObject.SetActive(true);
         }
     }
 }
